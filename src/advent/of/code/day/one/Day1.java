@@ -45,7 +45,7 @@ public class Day1 {
 
     private static char getFirstDigit(final String line)
     {
-        final String newString = replaceStringNumbersStart(line);
+        final String newString = replaceEarliestStringDigit(line);
         for (int i = 0; i < newString.length(); i++)
         {
             if (Character.isDigit(newString.charAt(i)))
@@ -58,7 +58,7 @@ public class Day1 {
 
     private static char getLastDigit(final String line)
     {
-        final String newString = replaceStringNumbersEnd(line);
+        final String newString = replaceLatestStringDigit(line);
         for (int i = newString.length() - 1 ; i >= 0; i--)
         {
             if (Character.isDigit(newString.charAt(i)))
@@ -70,7 +70,7 @@ public class Day1 {
     }
 
 
-    private static String replaceStringNumbersEnd(final String line)
+    private static String replaceLatestStringDigit(final String line)
     {
         final Optional<String> latestStringNumber = getLatestStringNumber(line);
 
@@ -82,7 +82,7 @@ public class Day1 {
         return line;
     }
 
-    private static String replaceStringNumbersStart(final String line)
+    private static String replaceEarliestStringDigit(final String line)
     {
         final Optional<String> earliestStringNumber = getEarliestStringNumber(line);
 
