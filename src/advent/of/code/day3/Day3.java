@@ -1,4 +1,4 @@
-package advent.of.code.day.three;
+package advent.of.code.day3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

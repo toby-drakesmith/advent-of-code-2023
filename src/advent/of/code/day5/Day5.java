@@ -1,11 +1,10 @@
-package advent.of.code.day.five;
+package advent.of.code.day5;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 public class Day5
